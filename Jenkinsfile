@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("rajeshgopal/rg-expo")
+        app = docker.build("${docker_account}/${repo_name}")
     }
 
     stage('Test image') {
